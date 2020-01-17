@@ -12,7 +12,7 @@ int main() {
 	string magic = "$1$";
 	
 	string alt_sum = md5(password + salt + password);
-	string int_sum = md5(password + magic + salt + alt_sum.substr(0, 6) + password[0] /*+ '\0' + '\0'*/);
+	string int_sum = md5(password + magic + salt + alt_sum.substr(0, 6) + password[0] + \0 + \0);
 	
 	for(unsigned int i = 0; i < 1000; i++) {
 		
