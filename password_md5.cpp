@@ -12,8 +12,8 @@ int main() {
 	string salt = "4fTghp6q";
 	string magic = "$1$";
 	
-	string alt_sum = md5(static_cast<std::string>(password + salt + password));
-	string int_sum = md5(static_cast<std::string>(password + magic + salt + alt_sum.substr(0, 6) + password[0] + '\0' + '\0'));
+	string alt_sum = MD5(password + salt + password).digest;
+	string int_sum = MD5(password + magic + salt + alt_sum.substr(0, 6) + password[0] + '\0' + '\0').digest;
 	/*
 	for(unsigned int i = 0; i < 1000; i++) {
 		
