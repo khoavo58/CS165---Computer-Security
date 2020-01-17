@@ -12,8 +12,8 @@ int main() {
 	string salt = "4fTghp6q";
 	string magic = "$1$";
 	
-	unsigned char* alt_sum = MD5(password + salt + password).digest.hexdigest();
-	unsigned char* int_sum = MD5(password + magic + salt + alt_sum.substr(0, 6) + password[0] + '\0' + '\0').digest.hexdigest();
+	unsigned char* alt_sum = MD5(password + salt + password).digest;
+	unsigned char* int_sum = MD5(password + magic + salt + alt_sum.substr(0, 6) + password[0] + '\0' + '\0').digest;
 	/*
 	for(unsigned int i = 0; i < 1000; i++) {
 		
