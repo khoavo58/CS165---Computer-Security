@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cstring>
 #include <string>
 #include "md5.h"
 
@@ -11,8 +12,8 @@ int main() {
 	string salt = "4fTghp6q";
 	string magic = "$1$";
 	
-	string alt_sum = MD5(password + salt + password);
-	string int_sum = MD5(password + magic + salt + alt_sum.substr(0, 6) + password[0] + '\0' + '\0');
+	string alt_sum = MD5(str.c_str(password + salt + password));
+	string int_sum = MD5(str.c_str(password + magic + salt + alt_sum.substr(0, 6) + password[0] + '\0' + '\0'));
 	/*
 	for(unsigned int i = 0; i < 1000; i++) {
 		
