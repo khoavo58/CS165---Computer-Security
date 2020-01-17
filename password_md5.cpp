@@ -40,7 +40,7 @@ int main() {
 		int_sum = md5(temp);
 	}
 	
-	cout << magic << salt << "$";
+	cout << magic + salt + "$";
 	
 	string crypt64 = "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	//cout << "Intermediate sum: " << int_sum << endl;
