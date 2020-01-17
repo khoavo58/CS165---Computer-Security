@@ -44,7 +44,7 @@ int main() {
 	
 	string crypt64 = "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	
-	string final = int_sum[11] + int_sum[4] + int_sum[10] + int_sum[5] + int_sum[3] + int_sum[9] + int_sum[15] + int_sum[2] + int_sum[8] + int_sum[14] + int_sum[1] + int_sum[7] + int_sum[13] + int_sum[0] + int_sum[6] + int_sum[12];
+	//string final = int_sum[11] + int_sum[4] + int_sum[10] + int_sum[5] + int_sum[3] + int_sum[9] + int_sum[15] + int_sum[2] + int_sum[8] + int_sum[14] + int_sum[1] + int_sum[7] + int_sum[13] + int_sum[0] + int_sum[6] + int_sum[12];
 
 	return 0;
 }
