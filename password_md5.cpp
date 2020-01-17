@@ -13,7 +13,7 @@ int main() {
 	
 	string alt_sum = md5(password + salt + password);
 	string int_sum = md5(password + magic + salt + alt_sum.substr(0, 6) + password[0] + '\0' + '\0');
-	
+	/*
 	for(unsigned int i = 0; i < 1000; i++) {
 		
 		string temp = "";
@@ -39,7 +39,7 @@ int main() {
 		
 		int_sum = md5(temp);
 	}
-	
+	*/
 	cout << magic + salt + "$";
 	
 	string crypt64 = "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
