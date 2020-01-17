@@ -11,6 +11,7 @@ int main() {
 	string password = "ztpwms";
 	string salt = "4fTghp6q";
 	string magic = "$1$";
+	string str;
 	
 	string alt_sum = MD5(str.c_str(password + salt + password));
 	string int_sum = MD5(str.c_str(password + magic + salt + alt_sum.substr(0, 6) + password[0] + '\0' + '\0'));
