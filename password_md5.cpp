@@ -7,7 +7,7 @@ using namespace std;
 int main() {
 
 	string HASH = "WT9A81ixE0ygG7v8y7ijG/"
-	string password = "";
+	string password = "ztpwms";
 	string salt = "4fTghp6q";
 	string magic = "$1$";
 	
