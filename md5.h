@@ -61,6 +61,7 @@ public:
   friend std::ostream& operator<<(std::ostream&, MD5 md5);
   
   // Added function
+  typedef unsigned char uint1; // 8bit
   uint1 digest[16]; // the result 
   // unsigned char* hash = MD5("").digest;
  
