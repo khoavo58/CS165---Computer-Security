@@ -1,5 +1,5 @@
 We ran the source code on two computers with the following specs.
-We also split the numbers of pw tried in half by starting with "aaaaa" on the first computer and "nnnnnn" on the Second.
+We also split the numbers of pw tried in half by starting with "aaaaa" on the first computer and "zzzzzz" on the Second computer and worked our way backwards to shorten the search time by half.
 
 1) CPU: Intel Core i7-5500U 2.4GHz with turbo Boost up to 3.0GHZ
    Cores: 2
@@ -12,7 +12,7 @@ We also split the numbers of pw tried in half by starting with "aaaaa" on the fi
 2) CPU: Intel Core i7-4720HQ 2.60GHz
    Cores: 4
    Utilization: 25%
-   Speed: 259 Ghz
+   Speed: 2.59 Ghz
    Processes: 200
    Threads: 2059
    PW tried per second: 83
