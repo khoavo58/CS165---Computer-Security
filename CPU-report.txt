@@ -7,7 +7,7 @@ We also split the numbers of pw tried in half by starting with "aaaaa" on the fi
    Speed: 2.92 Ghz
    Processes: 200
    Threads: 1956
-   PW tried per second: 74
+   PW tried per second: 2235
    
 2) CPU: Intel Core i7-4720HQ 2.60GHz
    Cores: 4
@@ -15,4 +15,4 @@ We also split the numbers of pw tried in half by starting with "aaaaa" on the fi
    Speed: 2.59 Ghz
    Processes: 200
    Threads: 2059
-   PW tried per second: 83
+   PW tried per second: 2573
