@@ -14,12 +14,12 @@ std::string HexToString(std::string hex) {
 
 int main() {
 	string HASH = "WT9A81ixE0ygG7v8y7ijG/"; // "Rh3y.sliHc04vdTkuHgN.1";
-	string password = "aaaaa" // "ztpwms";
+	string password = "aaaaa"; // "ztpwms";
 	string salt = "4fTghp6q"; // "hfT7jp2q"; 
 	string magic = "$1$";
 	bool found = false;
 	
-	while(password != "zzzzz" && !found);
+	while(password != "zzzzz" && !found) {
 		//string temp = MD5(password).hexdigest();
 		//cout << "temp: " << temp << endl;
 
@@ -147,7 +147,7 @@ int main() {
 			if(password[4] == 'z') {
 				if(password[3] == 'z') {
 					if(password[2] == 'z') {
-						if(password[1] == 'z'{
+						if(password[1] == 'z'){
 							password[0]++;
 							password[1] = 'a';
 							password[2] = 'a';
