@@ -5,14 +5,12 @@ We also split the numbers of pw tried in half by starting with "aaaaa" on the fi
    Cores: 2
    Utilization: 55%
    Speed: 2.92 Ghz
-   Processes: 200
-   Threads: 1956
+   Threads: 1
    PW tried per second: 2235
    
 2) CPU: Intel Core i7-4720HQ 2.60GHz
    Cores: 4
    Utilization: 25%
    Speed: 2.59 Ghz
-   Processes: 200
-   Threads: 2059
+   Threads: 1
    PW tried per second: 2573
