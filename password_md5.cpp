@@ -4,7 +4,7 @@
 #include "md5.h"
 
 using namespace std;
-
+/*
 int main() {
 
 	string HASH = "WT9A81ixE0ygG7v8y7ijG/";
@@ -14,7 +14,7 @@ int main() {
 	
 	unsigned char* alt_sum = MD5(password + salt + password).digest;
 	unsigned char* int_sum = MD5(password + magic + salt + alt_sum.substr(0, 6) + password[0] + '\0' + '\0').digest;
-	/*
+	
 	for(unsigned int i = 0; i < 1000; i++) {
 		
 		string temp = "";
@@ -38,14 +38,21 @@ int main() {
 			temp += int_sum;
 		}
 		
-		int_sum = md5(temp);
+		int_sum = MD5(temp).digest;
 	}
-	*/
+	
 	cout << magic + salt + "$";
 	
 	string crypt64 = "./0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz";
 	//cout << "Intermediate sum: " << int_sum << endl;
 	//string final = int_sum[11] + int_sum[4] + int_sum[10] + int_sum[5] + int_sum[3] + int_sum[9] + int_sum[15] + int_sum[2] + int_sum[8] + int_sum[14] + int_sum[1] + int_sum[7] + int_sum[13] + int_sum[0] + int_sum[6] + int_sum[12];
 
+	return 0;
+}
+*/
+
+int main() {
+	
+	cout << "md5 of 'grape': " << md5("grape") << endl;
 	return 0;
 }
